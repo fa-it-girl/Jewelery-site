@@ -1,0 +1,11 @@
+.show-more-item{
+  background-image: url('https://cdn.shopify.com/s/files/1/1183/1076/files/pretty_woman_with_red_lipstick_showing_off_multiple_rings.jpg?v=1604960571');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+}
+
+.show-more-item img{
+   width: 100px;
+}

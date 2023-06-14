@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Changa+One:ital@0;1&family=Lato:wght@300&family=Roboto+Condensed&display=swap');
+
+.new-arrival-background{
+  background-image: url('https://www.fields.ie/dw/image/v2/BFNQ_PRD/on/demandware.static/-/Sites-Fields-Library/default/dw0b2cad6d/homepage/other-components/5-must-have-gold-jewellery-pieces-hp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40em;
+}
+
+
+.new-arrival{
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  margin-left: 30%;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.new-arrival h1{
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.new-arrival button{
+  width: 300px;
+  height: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
