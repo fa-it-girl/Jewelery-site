@@ -6,16 +6,18 @@
   background-color: white;
   /* width: 90em; */
  position: absolute;
- top: 5%;
+ top: 1%;
  left: 0px;
   right: 0px;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  width: 70%;
+  width: 100%;
 
 }
+
+
 
 .earring-dropdown-item{
   text-align: center;

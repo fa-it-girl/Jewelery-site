@@ -1,4 +1,4 @@
-
+import './App.css'
 import { store } from './store/index';
 import React from 'react';
 import { Provider } from 'react-redux';

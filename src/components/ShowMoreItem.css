@@ -1,11 +1,25 @@
 .show-more-item{
-  background-image: url('https://cdn.shopify.com/s/files/1/1183/1076/files/pretty_woman_with_red_lipstick_showing_off_multiple_rings.jpg?v=1604960571');
-
+  background-image: url('https://www.diamondcentre.it/modules/zoneslideshow/views/img/slideImages/1638527075.jpg');
+  top: 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30em;
+  height: 20em;
 }
 
 .show-more-item img{
    width: 100px;
+}
+
+
+.more-item-navbar{
+  background-color: white;
+
+}
+
+.more-item-navbar .list-navbar{
+  color: black;
+}
+
+.more-item-navbar .list-navbar .sign{
+  display: none;
 }

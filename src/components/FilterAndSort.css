@@ -1,0 +1,47 @@
+.filter-and-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.none {
+  flex-grow: 1;
+}
+
+
+.dropdown{
+   border-left: 1px solid black;
+  border-right: 1px solid black ;
+  width: 150px;
+  text-align: center;
+}
+
+.filter {
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+}
+
+/* Additional styles for Dropdown component */
+.dropdown-toggle {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #cccccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin-top: 5px;
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,44 @@
+.popup-filter-items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modal-dialog{
+  width: 350px !important;
+  float: right !important;
+  top: 0 !important;
+  padding-top: 0px !important;
+  position: sticky !important;
+}
+
+.modal-content{
+  height: 100vh !important;
+  padding-top: 0px;
+  top: 0 !important;
+}
+
+.btn-link{
+  text-decoration: none !important;
+}
+
+.sticky-top-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.modal-dialog {
+  position: sticky !important;
+  top: 0 !important;
+  transform: translateY(-5%) !important;
+}
+
+.popup-filter-items .plus{
+  text-align: end;
+  padding-right: 10px;
+}
+
+.popup-filter-items div{
+  margin-bottom: 5px;
+}

@@ -1,24 +1,69 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import './Navbar.css'
 import logo from '../images/logo.png'
 import './Navbar.css';
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 // import NewArrivals from "./NewArrivals";
 import { useNavigate } from "react-router-dom";
-import DropdownEarring from './DropdownEarring'
+import DropdownEarring from './DropdownEarring';
+import DropdownRings from "./DropdownRing";
+import DropdownBracalet from "./DropdownBracalet";
+import DropdownNecklace from "./DropdownNecklace";
 
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const[isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const[isDropdownRingOpen, setIsDropdownRingOpen] = useState(false)
+  const[isDropdownBracaletOpen, setIsDropdownBracaletOpen] = useState(false)
+  const[isDropdownNecklaceOpen, setIsDropdownNecklaceOpen] = useState(false)
 
   const navigate = useNavigate()
+
+  useEffect(() => {
+    let timer;
+    if (isDropdownOpen) {
+      timer = setTimeout(() => {
+        setIsDropdownOpen(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [isDropdownOpen]);
+
 
   const toggleDropdown = () => {
     setIsDropdownOpen(true)
   };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false)
+  }
+
+  const toggleDropdownRing = () => {
+    setIsDropdownRingOpen(true)
+  };
+
+  const closeDropdownRing = () => {
+    setIsDropdownRingOpen(false)
+  }
+
+  const toggleDropdownBracalet = () => {
+    setIsDropdownBracaletOpen(true)
+  };
+
+  const closeDropdownBracalet = () => {
+    setIsDropdownBracaletOpen(false)
+  }
+
+  const toggleDropdownNecklace = () => {
+    setIsDropdownNecklaceOpen(true)
+  };
+
+  const closeDropdownNecklace = () => {
+    setIsDropdownNecklaceOpen(false)
+  }
   const toggleButtonHandler = () => {
     navigate('/login')
   };
@@ -46,24 +91,27 @@ export default function Navbar() {
         }
       >
         <ul>
-           <li className={`list-navbar ${isDropdownOpen ? 'open' : ''}`} >
-             <h4 onClick={toggleDropdown}>EARRING</h4>
+           <li className='list-navbar' >
+             <h4  onMouseEnter={toggleDropdown} onMouseLeave={closeDropdown}>EARRING</h4>
              {isDropdownOpen && <DropdownEarring />}
            </li>
            <li className="list-navbar">
-             <h4>RING</h4>
+             <h4 onMouseEnter={toggleDropdownRing} onMouseLeave={closeDropdownRing}>RING</h4>
+             {isDropdownRingOpen && <DropdownRings />}
            </li>
            <li className="list-navbar">
-             <h4>BRACALET</h4>
+             <h4 onMouseEnter={toggleDropdownBracalet} onMouseLeave={closeDropdownBracalet}>BRACALET</h4>
+             {isDropdownBracaletOpen && <DropdownBracalet />}
            </li>
            <li className="list-navbar">
-             <h4>NECKLACE</h4>
+             <h4 onMouseEnter={toggleDropdownNecklace} onMouseLeave={closeDropdownNecklace}> NECKLACE</h4>
+             {isDropdownNecklaceOpen && <DropdownNecklace />}
            </li>
           <li className="list-navbar">
             <h4 onClick= {toggleButtonHandler} className='sign'>SIGN IN</h4>
           </li>
           <li>
-          <FontAwesomeIcon icon={faBasketShopping} />
+          {/* <FontAwesomeIcon icon={faBasketShopping} /> */}
           </li>
         </ul>
       </div>

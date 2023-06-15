@@ -1,13 +1,21 @@
 import './ShowMoreItem.css';
-import logo from '../images/logo.png'
-import { Link } from 'react-router-dom';
+// import logo from '../images/logo.png'
+// import { Link } from 'react-router-dom';
+import FilterAndSort from './FilterAndSort';
+import Navbar from './Navbar';
 
 const ShowMoreItem = () => {
   return(
     <>
-    <div className='show-more-item'>
-    <Link to='/'><img src={logo} alt="bjuteria logo" /></Link>
+     <div className='more-item-navbar'>
+       <Navbar />
     </div>
+    <div className='show-more-item'>
+
+
+
+
+    </div> <FilterAndSort />
     </>
   )
 }
