@@ -1,0 +1,16 @@
+
+@media (min-width: 767px) {
+  .carousel-caption{
+   padding-bottom: 100px !important;
+ }
+}
+
+.carousel-caption h5{
+  color: black !important;
+}
+.carousel-caption h6{
+  color: black !important;
+}
+.carousel-caption p{
+  color: black !important;
+}

@@ -7,8 +7,9 @@ const Footer = () => {
       <div>
         <h4>Shop</h4>
         <p>Gift cards</p>
-        <p>Jewelery Registration</p>
+        <p>Registration</p>
         <p>Sitemap</p>
+        <p>Gift cards</p>
       </div>
       <div>
       <h4>About</h4>
@@ -19,6 +20,8 @@ const Footer = () => {
       </div>
       <div>
       <h4>Help</h4>
+        <p>Help center</p>
+        <p>Privacy setting</p>
         <p>Help center</p>
         <p>Privacy setting</p>
 

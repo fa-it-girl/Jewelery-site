@@ -1,13 +1,18 @@
 .footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 20px;
   background-color: black;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   padding-top: 20px;
+  margin-top: 50px;
+}
+
+.footer div{
+  margin: auto;
 }
 
 
-.footer h4, p{
-  color: white;
+.footer h4,p{
+  color: white !important;
 }

@@ -30,3 +30,20 @@
   border: 2px solid white;
   color: white;
 }
+
+@media (max-width: 767px) {
+  .new-arrival h1{
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .new-arrival button{
+    margin: auto;
+    width: 200px;
+  }
+
+  .hamburger{
+   visibility: hidden;
+  }
+}

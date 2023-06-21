@@ -3,6 +3,9 @@ import './ShowMoreItem.css';
 // import { Link } from 'react-router-dom';
 import FilterAndSort from './FilterAndSort';
 import Navbar from './Navbar';
+// import FetchJewelery from './FetchJewelery';
+
+import FetchJewelery from './FetchJewelery';
 
 const ShowMoreItem = () => {
   return(
@@ -16,6 +19,7 @@ const ShowMoreItem = () => {
 
 
     </div> <FilterAndSort />
+    <FetchJewelery />
     </>
   )
 }

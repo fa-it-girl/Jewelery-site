@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Changa+One:ital@0;1&family=Lato:wght@300&family=Roboto+Condensed&display=swap');
+body{
+  font-family: 'Caveat', cursive;
+  font-family: 'Changa One', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.col img{
+  width: 50px;
+  background-size: cover;
+  margin-left: 45%;
+}
+
+hr{
+  color: black;
+}
+
+.luxury-jewelery{
+  width: 100px;
+}
+
+.col h5{
+  padding-top: 0px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.col h6{
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .col h5{
+    font-size: 8px;
+  }
+
+  .col h6{
+    font-size:  6px;
+  }
+
+  .col img{
+    width: 20px;
+  }
+}
