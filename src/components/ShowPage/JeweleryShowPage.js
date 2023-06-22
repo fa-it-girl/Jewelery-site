@@ -1,7 +1,8 @@
+import Navbar from "../Navbar";
 const JeweleryShowPage = () => {
   return (
     <>
-
+      <Navbar />
     </>
   )
 }

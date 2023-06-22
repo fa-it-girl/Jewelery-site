@@ -5,6 +5,8 @@ import { useReward } from 'react-rewards';
 import { useNavigate } from "react-router-dom";
 
 
+
+
 const FetchJewelery = () => {
   const [jeweleries, setJewelery] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,7 +20,7 @@ const FetchJewelery = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://jewelery.free.beeceptor.com/todos');
+      const response = await fetch('https://64942e8e0da866a953674fe3.mockapi.io/jewels/jewels');
       const data = await response.json();
       setJewelery(data);
     };
@@ -39,8 +41,8 @@ const FetchJewelery = () => {
     setHoveredItemId(null);
   };
 
-  const showPageHandler = () => {
-    navigate('/moreItem/info')
+  const showPageHandler = (jewelery) => {
+    navigate(`/moreItem/${jewelery.ID}`, { state: jewelery });
   }
 
 
@@ -54,11 +56,11 @@ const FetchJewelery = () => {
       <h2 className="popular mt-5 mb-5 pl-3">New Arrivals</h2>
       <div className="jewelery-container">
         {visibleItems.map((jewelery) => (
-          <div className="jewelery-list" key={jewelery.ID} jewelery={jewelery}>
+          <div className="jewelery-list" key={jewelery.ID} >
             <div className="jewelery" onMouseEnter={() => handleMouseEnter(jewelery.ID)}
               onMouseLeave={handleMouseLeave}>
               <img
-                onClick={showPageHandler}
+                onClick={() => showPageHandler(jewelery)}
                 src={hoveredItemId === jewelery.ID ? jewelery.URL2 : jewelery.URL}
                 alt="JEWELERYImage"
 

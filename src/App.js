@@ -11,24 +11,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselImages from './components/ShowPage/CarouselImages';
 
 
+
 const App = () => {
+
+  const visibleItems = [];
   return (
     <Provider store={store}>
       <Router>
-
-        {/* Render the Root component outside of the Routes */}
         <Routes >
           <Route path='/' element={<Root />}/>
           <Route path='/newArrival' element={<NewArrivals />} />
-
-        </Routes>
-        <Routes>
-            <Route path="/moreItem" element={<ShowMoreItem />} />
-            <Route path="/moreItem/info" element={<CarouselImages />} />
-        </Routes>
-        <Routes >
+          <Route path="/moreItem" element={<ShowMoreItem />} />
+          <Route path={`/moreItem/:ID`} element={<CarouselImages visibleItems={visibleItems}/>} />
           <Route path="/login" element={<SignIn />} />
         </Routes>
+
       </Router>
     </Provider>
   );

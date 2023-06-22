@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Changa+One:ital@0;1&family=Lato:wght@300&family=Roboto+Condensed&display=swap');
+
+
+.show-page{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  font-family: 'Caveat', cursive;
+  font-family: 'Changa One', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.addtobag{
+  width: 95%;
+  margin-top: 10%;
+  padding: 10px;
+  border: 1px solid grey;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+#JEWELERY{
+  width: 60%;
+  height: 40PX;
+  margin-left: 10%;
+}
