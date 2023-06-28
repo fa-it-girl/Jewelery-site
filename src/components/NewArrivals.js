@@ -15,18 +15,21 @@ const NewArrivals = () => {
   }
    return (
     <>
-     <div className="new-arrival-background fluid">
-       <Navbar />
-       <div className='new-arrival'>
-        <h1 className=''>NEW ARRIVALS</h1>
-       <button className='btn-responsive'onClick={ShowMoreItemHandler}>Shop now</button>
+     <div>
+      <Navbar />
+      <div className="new-arrival-background fluid">
+
+        <div className='new-arrival'>
+          <h1 className=''>NEW ARRIVALS</h1>
+          <button className='btn-responsive'onClick={ShowMoreItemHandler}>Shop now</button>
+        </div>
       </div>
+          <ClickableItems />
+          <ExampleItem />
+          <ExampleImages />
+          <UserReviews />
      </div>
 
-    <ClickableItems />
-    <ExampleItem />
-    <ExampleImages />
-    <UserReviews />
     </>
    )
 }

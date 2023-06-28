@@ -3,9 +3,6 @@ import './Navbar.css'
 import logo from '../images/logo.png'
 import './Navbar.css';
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
-// import NewArrivals from "./NewArrivals";
 import { useNavigate } from "react-router-dom";
 import DropdownEarring from './DropdownEarring';
 import DropdownRings from "./DropdownRing";

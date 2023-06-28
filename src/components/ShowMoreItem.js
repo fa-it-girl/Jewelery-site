@@ -14,10 +14,6 @@ const ShowMoreItem = () => {
        <Navbar />
     </div>
     <div className='show-more-item'>
-
-
-
-
     </div> <FilterAndSort />
     <FetchJewelery />
     </>

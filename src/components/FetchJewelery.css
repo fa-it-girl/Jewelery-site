@@ -25,18 +25,17 @@
   width: 40px;
   height: 25px;
 }
-.jewelery button{
-  width: 100%;
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid grey;
-  /* transition: transform 0.4s; */
-}
-
-.jewelery button:hover{
-  transform: scale(1.1);
-}
 
 .popular{
   text-align: center;
+}
+
+.jewelery h4, h6{
+  text-align: center;
+}
+
+
+.jewelery img{
+  height: 300px;
+  width: 120%;
 }
