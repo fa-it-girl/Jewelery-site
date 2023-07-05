@@ -10,6 +10,10 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.showpage-navbar .navigation-menu{
+  display: none;
+}
+
 .addtobag{
   width: 95%;
   margin-top: 10%;

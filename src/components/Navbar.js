@@ -8,9 +8,10 @@ import DropdownEarring from './DropdownEarring';
 import DropdownRings from "./DropdownRing";
 import DropdownBracalet from "./DropdownBracalet";
 import DropdownNecklace from "./DropdownNecklace";
+import HeaderButton from "./Cart/HeaderButton";
 
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const[isDropdownOpen, setIsDropdownOpen] = useState(false)
   const[isDropdownRingOpen, setIsDropdownRingOpen] = useState(false)
@@ -107,9 +108,11 @@ export default function Navbar() {
           <li className="list-navbar">
             <h4 onClick= {toggleButtonHandler} className='sign'>SIGN IN</h4>
           </li>
-          <li>
-          {/* <FontAwesomeIcon icon={faBasketShopping} /> */}
-          </li>
+          {/* <li>
+          <header className='header'>
+        <HeaderButton onClick={props.onShowCart} />
+      </header>
+          </li> */}
         </ul>
       </div>
 

@@ -39,3 +39,20 @@
   height: 300px;
   width: 120%;
 }
+
+@media (max-width: 767px){
+  .jewelery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jewelery-list{
+    width: 140px;
+    height: 360px;
+  }
+
+  .pagination{
+    padding-top: 20%;
+    margin: auto;
+  }
+}

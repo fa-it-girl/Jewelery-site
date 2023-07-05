@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import MyPagination from './Pagination';
 import { useNavigate } from 'react-router-dom';
 
-const FetchJewelery = ({ isAdmin }) => {
+const FetchJewelery = () => {
   const [jeweleries, setJeweleries] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [hoveredItemId, setHoveredItemId] = useState(null);
@@ -37,26 +37,6 @@ const FetchJewelery = ({ isAdmin }) => {
     navigate(`/moreItem/${jewelery.ID}`, { state: jewelery });
   };
 
-  const handleDelete = (jewelry) => {
-
-    fetch(`https://64942e8e0da866a953674fe3.mockapi.io/jewels/jewels/${jewelry.id}`, {
-      method: 'DELETE',
-    })
-      .then((response) => {
-        if (response.ok) {
-          const updatedJeweleries = jeweleries.filter(item => item.id !== jewelry.id);
-          setJeweleries(updatedJeweleries);
-          console.log('Item deleted successfully');
-        } else {
-
-          console.error('Failed to delete item');
-        }
-      })
-      .catch((error) => {
-
-        console.error('Error deleting item:', error);
-      });
-  };
 
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -81,9 +61,7 @@ const FetchJewelery = ({ isAdmin }) => {
               />
               <h4 className="title">{jewelery.name}</h4>
               <h6 className="price">€{jewelery.price}</h6>
-              {isAdmin && (
-                <button onClick={() => handleDelete(jewelery)}>Delete</button>
-              )}
+
             </div>
           </div>
         ))}

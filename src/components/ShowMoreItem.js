@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 
 import FetchJewelery from './FetchJewelery';
 
+
 const ShowMoreItem = () => {
   return(
     <>
@@ -16,6 +17,7 @@ const ShowMoreItem = () => {
     <div className='show-more-item'>
     </div> <FilterAndSort />
     <FetchJewelery />
+    {/* <AddJewelery /> */}
     </>
   )
 }

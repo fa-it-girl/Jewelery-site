@@ -7,6 +7,7 @@ import UserReviews from './Homepage/UserReviews';
 import ExampleImages from './Homepage/ExampleImages';
 
 
+
 const NewArrivals = () => {
   const navigate = useNavigate()
 
@@ -28,6 +29,7 @@ const NewArrivals = () => {
           <ExampleItem />
           <ExampleImages />
           <UserReviews />
+
      </div>
 
     </>
