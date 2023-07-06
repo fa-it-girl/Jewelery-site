@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { useLocation} from "react-router-dom";
 import Navbar from '../Navbar';
@@ -41,7 +41,7 @@ const CarouselImages = (props) => {
 
        <div className='show-page'>
          <div>
-          <Carousel style={{height:'90vh', width:'600px', marginLeft:'10%', marginTop:'5%'}}>
+          <Carousel >
           <Carousel.Item>
             <img className="d-block w-100 showPage" src={location.state.URL} alt='jeweleryimages' style={{height:'85vh', width:'500px'}}/>
           </Carousel.Item>
@@ -61,7 +61,7 @@ const CarouselImages = (props) => {
           <hr style={{ width:'80%', marginLeft:'10%'}}/>
           <h5 >Stone:    {location.state.stone}</h5>
           <hr style={{ width:'80%', marginLeft:'10%'}}/>
-          <h6>Details:  {location.state.details}</h6>
+          <h5>Details:  {location.state.details}</h5>
           <hr style={{ marginBottom:'20%',width:'80%', marginLeft:'10%'}}/>
 
 
